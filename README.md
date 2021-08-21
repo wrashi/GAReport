@@ -29,13 +29,13 @@ Especially, steps
 
 `GAPullTest.py` is a sample report but this code can easily run from a Jupyter notebook.
 
-\1. Start by importing the GAReport class
+1. Start by importing the GAReport class
 
 ```python
 from GAReport import GAReport
 ```
 
-\2. Set the dimension(s). These are the first column(s) of the returned table. 
+2. Set the dimension(s). These are the first column(s) of the returned table. 
 	(Example: Dimension is Page.
 	The metrics, such as Pageviews, then display for each page.) 
 
@@ -43,13 +43,13 @@ from GAReport import GAReport
 DIMENSIONS = ["Page", ]
 ```
 
-\3. Set the metric(s) (i.e. what you want to know about the dimension(s)).
+3. Set the metric(s) (i.e. what you want to know about the dimension(s)).
 
 ```python
 METRICS = ["Pageviews", "Unique Pageviews", "Avg. Time on Page", "Entrances", "Bounce Rate", "% Exit", "Page Value"]
 ```
 
-\4. Create the report.
+4. Create the report.
 	Access the report via `GAReport.df`.
 
 ```python
